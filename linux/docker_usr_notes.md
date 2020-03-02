@@ -27,16 +27,6 @@ docker run username/repository:tag					# 运行镜像库中的镜像
 docker logs -f <hash>								# 查看指定容器的日志
 ```
 
-## WIN7 下 docker 的使用
-
-* 下载并安装 **DockerToolbox** ，参考 [Windows下运用Docker部署Node.js开发环境](https://segmentfault.com/a/1190000007955073)
-
-* 设置环境变量（默认情况下 docker 宿主虚拟机的储存目录是在 C 盘）
-
-		MACHINE_STORAGE_PATH=D:\docker
-
-* 运行 **Docker Quickstart Terminal** ，提示成功后，即可在命令行中执行 docker 命令
-
 ## Docker 拉取 Redis 镜像，并运行
 
 * 拉取最新版本镜像
@@ -61,7 +51,7 @@ docker logs -f <hash>								# 查看指定容器的日志
 * 获取 redis 的配置模版
 
   ```shell
-  wget https://github.com/guozhen168/sprout-cat-notes/blob/master/config/redis.conf -O conf/redis.conf
+  wget https://gitee.com/guozhen168/sprout-cat-notes/raw/master/config/redis.conf -O conf/redis.conf
   ```
 	
 * 运行 Redis 镜像
@@ -78,13 +68,13 @@ docker logs -f <hash>								# 查看指定容器的日志
   
   参数说明：
   
-|  参数  | 说明                                                    |
-| ---- | -------------------------------------------------------- |
-|  -i   | 以交互模式运行容器，通常与 -t 同时使用                       |
-|  -t   | 为容器重新分配一个伪输入终端，通常与 -i 同时使用             |
-|  -t   | 后台运行容器，并返回容器ID                                   |
-|  -p   | 端口映射 |
-| -v | 挂载文件或文件夹 |
+  |  参数  | 说明                                                    |
+  | ---- | -------------------------------------------------------- |
+  |  -i   | 以交互模式运行容器，通常与 -t 同时使用                       |
+  |  -t   | 为容器重新分配一个伪输入终端，通常与 -i 同时使用             |
+  |  -t   | 后台运行容器，并返回容器ID                                   |
+  |  -p   | 端口映射 |
+  | -v | 挂载文件或文件夹 |
 
 * 通过 `docker ps` 命令查看容器运行信息
 
