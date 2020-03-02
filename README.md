@@ -4,7 +4,7 @@
 
 #### 目录
 
-* [简介](README.md)
+* [简介](INTRODUCTION.md)
 * 后端
 	* Java
 	  * 集合

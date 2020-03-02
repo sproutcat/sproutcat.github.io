@@ -14,7 +14,7 @@
 
 如下图
 
-![设置PLSQL](../static/imgs/set_plsql.png)
+![设置PLSQL](assets/imgs/set_plsql.png)
 
 ### 3、添加环境变量
 

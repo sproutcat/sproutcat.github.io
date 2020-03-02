@@ -8,7 +8,7 @@
 
 数据库迁移脚本命名规则为 `V<VERSION>__<NAME>.sql` （其中 <VERSION> 为版本号，如 1 或者 1.2），如下：
 	
-<img src="../static/imgs/flyway_script_naming.png" alt="flyway_script_name.png"  />
+<img src="assets/imgs/flyway_script_naming.png" alt="flyway_script_name.png"  />
 
 文件名由以下部分组成：
 
@@ -26,7 +26,7 @@
 
 **Flyway** 可以在**文件系统**和 Java **类路径**上发现 SQL 迁移脚本。迁移脚本可以存在一个或多个目录中，可以通过 `locations` 属性进行设置。
 
-![迁移脚本路径](../static/imgs/flyway_script_discovery.png)
+![迁移脚本路径](assets/imgs/flyway_script_discovery.png)
 
 在运行时，通过文件系统和Java类路径扫描**自动发现**基于SQL的新迁移。配置 `locations` 好要使用的SQL迁移后，只要它们符合配置的命名约定，Flyway就会自动选择任何新的SQL迁移。
 
