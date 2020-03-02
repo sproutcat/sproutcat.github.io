@@ -51,40 +51,40 @@ docker logs -f <hash>								# 查看指定容器的日志
   sudo docker images
   ```
 
-* 自定义 redis 服务运行配置（解决外网无法访问的问题）(e.g `/home/tzg/redis-dk/redis.conf`)
+* 创建 redis 配置目录
 
-  ```properties
-  #允许外网访问
-  bind 0.0.0.0
-port 6379
-  daemonize yes
-# redis配置外网访问
-  protected-mode no
-  # 配置密码
-  # requirepass 123456
   ```
-  
+  mkdir $PWD/redis/{conf,data} -p
+  cd redis
+  ```
+
+* 获取 redis 的配置模版
+
+  ```shell
+  wget https://github.com/guozhen168/sprout-cat-notes/blob/master/config/redis.conf -O conf/redis.conf
+  ```
+	
 * 运行 Redis 镜像
 
   ```shell
   sudo docker run \
-  	-p 6379:6379 \
-	-v /home/tzg/redis-dk/redis.conf:/etc/redis/redis.conf \
-  	-v /home/tzg/redis-dk/data:/data \
-	--privileged=true \
-  	--name redis-dk \
-  	-d redis redis-server /etc/redis/redis.conf
+      -p 6379:6379 \
+	    -v $PWD/data:/data \
+      -v $PWD/conf/redis.conf:/etc/redis/redis.conf \
+	    --privileged=true \
+      --name redis-dk \
+      -d redis redis-server /etc/redis/redis.conf
   ```
   
   参数说明：
   
 |  参数  | 说明                                                    |
-  | ---- | -------------------------------------------------------- |
-  |  -i   | 以交互模式运行容器，通常与 -t 同时使用                       |
-  |  -t   | 为容器重新分配一个伪输入终端，通常与 -i 同时使用             |
-  |  -t   | 后台运行容器，并返回容器ID                                   |
-  |  -p   | 端口映射 |
-  | -v | 挂载文件或文件夹 |
+| ---- | -------------------------------------------------------- |
+|  -i   | 以交互模式运行容器，通常与 -t 同时使用                       |
+|  -t   | 为容器重新分配一个伪输入终端，通常与 -i 同时使用             |
+|  -t   | 后台运行容器，并返回容器ID                                   |
+|  -p   | 端口映射 |
+| -v | 挂载文件或文件夹 |
 
 * 通过 `docker ps` 命令查看容器运行信息
 
