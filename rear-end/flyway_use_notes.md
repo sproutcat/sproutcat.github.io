@@ -8,7 +8,7 @@
 
 数据库迁移脚本命名规则为 `V<VERSION>__<NAME>.sql` （其中 <VERSION> 为版本号，如 1 或者 1.2），如下：
 	
-<img src="assets/imgs/flyway_script_naming.png" alt="flyway_script_name.png"  />
+<img src="../assets/imgs/flyway_script_naming.png" alt="flyway_script_name.png"  />
 
 文件名由以下部分组成：
 
@@ -26,7 +26,7 @@
 
 **Flyway** 可以在**文件系统**和 Java **类路径**上发现 SQL 迁移脚本。迁移脚本可以存在一个或多个目录中，可以通过 `locations` 属性进行设置。
 
-![迁移脚本路径](assets/imgs/flyway_script_discovery.png)
+![迁移脚本路径](../assets/imgs/flyway_script_discovery.png)
 
 在运行时，通过文件系统和Java类路径扫描**自动发现**基于SQL的新迁移。配置 `locations` 好要使用的SQL迁移后，只要它们符合配置的命名约定，Flyway就会自动选择任何新的SQL迁移。
 
@@ -92,37 +92,37 @@
 
 * 在 **pom.xml** 中添加 Flyway 的依赖
 
-```xml
-<dependency>
-	<groupId>org.flywaydb</groupId>
-	<artifactId>flyway-core</artifactId>
-</dependency>
-```
+    ```xml
+    <dependency>
+        <groupId>org.flywaydb</groupId>
+        <artifactId>flyway-core</artifactId>
+    </dependency>
+    ```
 
 * 在 **application.yml** 中添加 Flyway 配置
 
-```yml
-spring:
-	flyway:
-		## 打开flyway，使得每次程序启动的时候都会尝试去迁移数据。默认为 true
-		#enabled: true
-		## Encoding of SQL migrations (default: UTF-8)
-		#encoding: UTF-8
-		## 指定项目的迁移 sql 文件存放目录，默认为 classpath:db/migration
-		locations: classpath:db/migration
-		## 设定 flyway 的 metadata 表名, 默认为 flyway_schema_history
-		table: flyway_schema_history
-		## 对于已经存在的项目，数据库中存在数据，这个时候我们需要通过设置baseline告诉flyway，这个baseline及之前的sql脚本都不要执行了（否则会报重复的错误）
-		baseline-on-migrate: true
-		##  指定数据源，如果没有指定的话，默认使用 spring.datasource.url
-		#url: jdbc:mysql://127.0.0.1:3306/testDB?useSSL=false
-		## 如果这里明确指定了库名，那么在 spring.flyway.url 连接中指定的库名将无效
-		#spring.flyway.schemas=base_db_flyway
-		## 用户名，默认使用 spring.datasource.username
-        #spring.flyway.user=root
-        ## 密码，默认使用 spring.datasource.password
-        #spring.flyway.password=123456
-```
+    ```yml
+    spring:
+        flyway:
+            ## 打开flyway，使得每次程序启动的时候都会尝试去迁移数据。默认为 true
+            #enabled: true
+            ## Encoding of SQL migrations (default: UTF-8)
+            #encoding: UTF-8
+            ## 指定项目的迁移 sql 文件存放目录，默认为 classpath:db/migration
+            locations: classpath:db/migration
+            ## 设定 flyway 的 metadata 表名, 默认为 flyway_schema_history
+            table: flyway_schema_history
+            ## 对于已经存在的项目，数据库中存在数据，这个时候我们需要通过设置baseline告诉flyway，这个baseline及之前的sql脚本都不要执行了（否则会报重复的错误）
+            baseline-on-migrate: true
+            ##  指定数据源，如果没有指定的话，默认使用 spring.datasource.url
+            #url: jdbc:mysql://127.0.0.1:3306/testDB?useSSL=false
+            ## 如果这里明确指定了库名，那么在 spring.flyway.url 连接中指定的库名将无效
+            #spring.flyway.schemas=base_db_flyway
+            ## 用户名，默认使用 spring.datasource.username
+            #spring.flyway.user=root
+            ## 密码，默认使用 spring.datasource.password
+            #spring.flyway.password=123456
+    ```
 
 > **注意**：**Spring boot** 项目配置后 **Flyway** 后，每次启动服务，都会执行 **migrate** 命令。
 > 如果出现已执行过的 sql 脚本有变更的情况，需要手动执行 `mvn flyway:repair` 命令。

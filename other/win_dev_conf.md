@@ -22,11 +22,11 @@
 
 * 添加环境变量
 
-    | 变量名           | 变量值                    |
-    | ---------------- | ------------------------- |
-    |    JAVA_HOME  |   D:\Program Files\Java\jdk1.8.0_66  |
-    |    CLASSPATH  |   .;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;  |
-    |    path    |  %path%;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;  |
+| 变量名           | 变量值                    |
+| ---------------- | ------------------------- |
+|    JAVA_HOME  |   D:\Program Files\Java\jdk1.8.0_66  |
+|    CLASSPATH  |   .;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;  |
+|    path    |  %JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;  |
 
 * 按下Win(Ctrl和Alt之间的键)+R，然后输入CMD打开命令提示符窗口，输入以下命令验证环境配置是否正确
 
@@ -59,10 +59,10 @@
 
 * 添加环境变量
 
-    | 变量名           | 变量值                    |
-    | --------------- | ------------------------ |
-    | MAVEN_HOME |  D:\tools\java\apache-maven-3.6.3  |
-    | PATH       |   %MAVEN_HOME%\bin;  |
+| 变量名           | 变量值                    |
+| --------------- | ------------------------ |
+| MAVEN_HOME |  D:\tools\java\apache-maven-3.6.3  |
+| PATH       | %MAVEN_HOME%\bin  |
 
 ### 3、GRADLE 安装与环境变量配置
 
@@ -70,16 +70,15 @@
 
 * 配置环境变量
 
-  * 添加环境变量
 
-    | 变量名           | 变量值                    |
-    | ---------------- | ------------------------- |
-    | GRADLE_HOME      | D:\tools\java\gradle-6.2  |
-    | path             | %path%;%GRADLE_HOME%\bin; |
-    | GRADLE_USER_HOME | D:\tools\java\gradle-repo |
+| 变量名           | 变量值                    |
+| ---------------- | ------------------------- |
+| GRADLE_HOME      | D:\tools\java\gradle-6.2  |
+| PATH             | %GRADLE_HOME%\bin;        |
+| GRADLE_USER_HOME | D:\tools\java\gradle-repo |
 
   * 验证是否配置成功
-
+  
     ```bash
     gradle -v
     ```
@@ -116,6 +115,6 @@ npm install -g gulp --registry=https://registry.npm.taobao.org
 
 * 设置环境变量（默认情况下 docker 宿主虚拟机的储存目录是在 C 盘）
 
-  MACHINE_STORAGE_PATH=D:\docker
+  `MACHINE_STORAGE_PATH=D:\docker`
 
 * 运行 **Docker Quickstart Terminal** ，提示成功后，即可在命令行中执行 docker 命令

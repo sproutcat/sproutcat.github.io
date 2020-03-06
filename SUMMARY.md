@@ -6,7 +6,7 @@
 
 ## 2 后端技术篇
 
-* [Java 基础](rear-end/rear-end-summary.md)
+* [Java 基础](rear-end/java-summary.md)
 
     * [Java 集合框架常见面试题](rear-end/java/java_collection_notes.md)
 
@@ -15,14 +15,19 @@
 	* [Java 并发进阶常见面试题总结](rear-end/java/java_multi_thread_notes.md)
 
 	* [AQS 原理以及 AQS 同步组件总结](rear-end/java/java_aqs_notes.md)
+
 * java 框架
+
     * spring
     * hibernate
     * MyBatis 常见面试题总结
     * [QueryDSL 使用笔记](rear-end/querydsl_use_notes.md)
+
 * java 工具包
-    * [Flyway 的使用笔记](flyway_use_notes.md)
-    * [Antlr 使用笔记](antlr_use_notes.md)
+
+    * [Flyway 的使用笔记](rear-end/flyway_use_notes.md)
+    * [Antlr 使用笔记](rear-end/antlr_use_notes.md)
+    
 * [认证授权](rear-end/basis-of-authority-certification.md)
 * nginx
 
@@ -45,9 +50,9 @@
 
 ## 5 [Linux 篇](linux/llinux-summary.md)
 
-* 基础命令
+* [Linux 使用笔记](linux/linux_use_notes.md)
 
-* nano 的使用
+* [DOCKRE 使用笔记](linux/docker_use_notes.md)
 
 ## 6 [工具篇](tools/tools-summary.md)
 
@@ -61,5 +66,5 @@
 
 ## 7 [其他](other/other-summary.md)
 
-* [WINDOWS下搭建开发环境](win_dev_conf.md)
-* [WINDOWS 常用命令](win_command_notes.md)
+* [WINDOWS下搭建开发环境](other/win_dev_conf.md)
+* [WINDOWS 常用命令](other/win_command_notes.md)

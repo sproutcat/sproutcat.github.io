@@ -1,5 +1,4 @@
-DOCKRE 使用笔记
-================================
+# DOCKRE 使用笔记
 
 ### 常用命令
 
@@ -63,7 +62,7 @@ docker logs -f <hash>								# 查看指定容器的日志
       -v $PWD/conf/redis.conf:/etc/redis/redis.conf \
 	    --privileged=true \
       --name redis-dk \
-      -d redis redis-server /etc/redis/redis.conf
+      -d redis redis-server /etc/redis/redis.conf --appendonly yes
   ```
   
   参数说明：

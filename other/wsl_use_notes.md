@@ -149,7 +149,7 @@
     7. 查看安装Docker的版本
 
        ```shell
-       docker -v
+       sudo docker -v
        ```
 
     8. 验证 Docker CE 是否安装正确
@@ -157,8 +157,38 @@
        ```shell
        sudo docker run hello-world
        ```
+       
+    9. 把当前用户加入 `docker` 用户组（安装 docker 的时候默认应该会添加这个用户组）
 
-        > Docker 修改命令请查看 [DOCKRE 使用笔记](../linux/docker_usr_notes.md)
+       ```shell
+    gpasswd -a ${USER} docker
+       ```
+
+    10. 查看是否添加成功
+
+       ```shell
+       cat /etc/group | grep ^docker
+       ```
+
+    11. 重启 docker
+
+        ```shell
+        service docker restart
+        ```
+
+    12. 更新用户组
+
+        ```shell
+        newgrp docker
+        ```
+
+    13. 测试docker命令是否可以正常使用
+
+        ```shell
+        docker ps -a
+        ```
+
+         > Docker 修改命令请查看 [DOCKRE 使用笔记](../linux/docker_usr_notes.md)
 
 * 卸载 Docker-ce
 

@@ -1,17 +1,8 @@
-Git 使用笔记（命令行）
-================================
+# Git 使用笔记（命令行）
 
-参考文章
---------------------------------
+![git commad](../assets/imgs/git_cmd.png)
 
-* [GIT BOOK](https://git-scm.com/book/zh/v2)
-* [git - 简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)
-* [一篇文章，教你学会Git](https://juejin.im/post/599e14875188251240632702)
-* [Git飞行规则 (Flight Rules)](https://github.com/k88hudson/git-flight-rules/blob/master/README_zh-CN.md)
-
-
- 标签（tag）
---------------------------------
+## 标签（tag）
 
 列出现有标签的命令：
 
@@ -55,25 +46,34 @@ git tag -d tagName
 git push origin :refs/tags/tagName
 ```
 
- 添加版本控制（add）
---------------------------------
-
-添加一个文件的版本控制
+## 添加版本控制（add）
 
 ```bash
+# 添加一个文件的版本控制
 git add filename.txt
 ```
 
- 提交（commit）
---------------------------------
-
-提交一个文件
+##  提交（commit）
 
 ```bash
+# 提交一个文件
 git commit filename.txt -m 提交一个文件
 ```
 
+## 还原（reset）
 
+```bash
+# 重置到相应提交
+git reset HEAD@{4}
+# ……或者……
+git reset --hard <提交的哈希值>
 
+git reset --hard HEAD^
+```
 
+## 参考文章
 
+* [GIT BOOK](https://git-scm.com/book/zh/v2)
+* [git - 简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)
+* [一篇文章，教你学会Git](https://juejin.im/post/599e14875188251240632702)
+* [Git飞行规则 (Flight Rules)](https://github.com/k88hudson/git-flight-rules/blob/master/README_zh-CN.md)
