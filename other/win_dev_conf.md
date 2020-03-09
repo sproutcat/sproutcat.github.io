@@ -90,10 +90,18 @@
 
 * 安装gulp插件
 
-```bash
-npm install -g gulp --registry=https://registry.npm.taobao.org
-```
+  ```bash
+  npm install -g gulp --registry=https://registry.npm.taobao.org
+  ```
 
+* 更换 **npm** 源，加速软件包的安装
+
+  ```bash
+  # 查看 npm 配置信息
+  npm config list
+  # 修改 registry 地址为淘宝镜像源
+  npm config set registry https://registry.npm.taobao.org/
+  ```
 
 ### 5、MYSQL安装配置
 

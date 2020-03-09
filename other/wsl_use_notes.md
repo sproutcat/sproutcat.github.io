@@ -19,7 +19,7 @@
 
 * 默认情况下 Ubuntu 子系统的 root 账号的密码是动态的，如果需要自己设置，请在 Ubuntu 的命令行中执行以下命令
 
-    ```bash
+    ```shell
     sudo passwd
     ```
 
@@ -85,10 +85,29 @@
     * 安装软件
 
         ```shell
+        cd src
         make install
         ```
-
     
+    * 添加系统服务
+
+        ```shell
+        # 当前处于 redis 的 src 目录
+        cd ../utils/
+        # 执行初始化服务脚本，默认添加名称为 redis_6379 的服务
+        ./install_server.sh
+        ```
+
+    * 启动服务
+
+        ```shell
+        # 查看服务列表
+        service --status-all
+        # 启动服务
+        service redis_6379 start
+        ```
+
+        > 如果当前用于启动服务权限不足，请根据提示进行设置
 
 2. 直接通过 apt-get 安装
 
@@ -161,7 +180,7 @@
     9. 把当前用户加入 `docker` 用户组（安装 docker 的时候默认应该会添加这个用户组）
 
        ```shell
-    gpasswd -a ${USER} docker
+       gpasswd -a ${USER} docker
        ```
 
     10. 查看是否添加成功
@@ -188,7 +207,7 @@
         docker ps -a
         ```
 
-         > Docker 修改命令请查看 [DOCKRE 使用笔记](../linux/docker_usr_notes.md)
+        > Docker 修改命令请查看 [DOCKRE 使用笔记](../linux/docker_usr_notes.md)
 
 * 卸载 Docker-ce
 
@@ -232,12 +251,12 @@
 
 * 修改在WSL中`/etc/sudoers`文件,为需要自启动的服务指定为免密码。如:
 
-  ``` sudoers
-    %sudo ALL=NOPASSWD: /etc/init.d/redis_6379
+  ```shell
+  %sudo ALL=NOPASSWD: /etc/init.d/redis_6379
   ```
   
 * 修改`commands.txt`文件指定需要自启动的服务。如:
 
   ```shell
-    /etc/init.d/redis_6379
+  /etc/init.d/redis_6379
   ```
