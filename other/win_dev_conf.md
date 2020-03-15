@@ -113,11 +113,41 @@
 
 ## 7、安装 Git 版本控制工具
 
-下载安装 [Git](https://git-scm.com/download/win) 客户端
+* 下载安装 [Git](https://git-scm.com/download/win) 客户端
 
+## 8、IDEA 的使用配置
 
+1. 安装常用插件
 
-## 8、WIN7 下 docker 的使用
+   * Alibaba Java Coding Guidelines（阿里的代码规范插件）
+   * Lombok
+   * Maven Helper
+   * Translation（翻译插件）
+   * CodeGlance （代码地图）
+
+2. 修改 `Terminal` 的默认命令行工具，使用 `git-bash`，操作如下：
+
+   打开设置面板 `File` > `Settings` > `Tools` > `Terminal` ，在 `Shell path` 一栏中，输入你主机 `Git Bash`的安装位置 
+
+   ```bash
+   "C:\Program Files\Git\bin\sh.exe" -login -i
+   ```
+
+3. 添加文件的默认注释信息
+
+   打开设置面板 `File` > `Settings` > `Editor` > `File and Code Templates` ，点击 `Includes` 标签的 `File Header` 选项，输入注释信息，如下
+
+   ```java
+   /**
+    * 
+    * @author ${USER}
+    * @createdAt ${DATE} ${TIME}
+    */
+   ```
+
+   
+
+## 9、WIN7 下 docker 的使用
 
 * 下载并安装 **DockerToolbox** ，参考 [Windows下运用Docker部署Node.js开发环境](https://segmentfault.com/a/1190000007955073)
 
