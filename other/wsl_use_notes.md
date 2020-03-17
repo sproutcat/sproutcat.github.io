@@ -86,7 +86,7 @@
 
         ```shell
         cd src
-        make install
+        sudo make install
         ```
     
     * 添加系统服务
@@ -95,7 +95,7 @@
         # 当前处于 redis 的 src 目录
         cd ../utils/
         # 执行初始化服务脚本，默认添加名称为 redis_6379 的服务
-        ./install_server.sh
+        sudo ./install_server.sh
         ```
 
     * 启动服务

@@ -48,7 +48,7 @@
 
 * 通过命令执行
 
-    ```bash
+    ```shell
     mvn -Dflyway.url='jdbc:mysql://127.0.0.1:3306/testDB?useSSL=false' -Dflyway.user=root -Dflyway.password=root flyway:info
     ```
 
@@ -71,7 +71,7 @@
 
 	这样的话，上面的命令就变成：
 	
-	```bash
+	```shell
     mvn flyway:info
     ```
 	
