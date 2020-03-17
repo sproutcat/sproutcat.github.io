@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url> <loc>https://gitee.com/guozhen168/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gitee.com/guozhen168/rear-end/java-summary.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gitee.com/guozhen168/rear-end/java/java_collection_notes.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gitee.com/guozhen168/rear-end/java/java_multi_thread_base_notes.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gitee.com/guozhen168/rear-end/java/java_multi_thread_notes.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gitee.com/guozhen168/rear-end/java/java_aqs_notes.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gitee.com/guozhen168/rear-end/querydsl_use_notes.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gitee.com/guozhen168/rear-end/flyway_use_notes.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gitee.com/guozhen168/rear-end/antlr_use_notes.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gitee.com/guozhen168/rear-end/basis-of-authority-certification.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gitee.com/guozhen168/database/mysql_backup.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gitee.com/guozhen168/database/plsql_connect_oracle_64.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gitee.com/guozhen168/linux/linux_use_notes.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gitee.com/guozhen168/linux/docker_use_notes.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gitee.com/guozhen168/tools/git_use_notes.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gitee.com/guozhen168/tools/insomnia_use_notes.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gitee.com/guozhen168/tools/fiddler_use_notes.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gitee.com/guozhen168/other/win_dev_conf.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gitee.com/guozhen168/other/win_command_notes.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+</urlset>
