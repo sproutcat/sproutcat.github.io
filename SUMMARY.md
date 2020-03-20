@@ -19,7 +19,7 @@
 * java 框架
 
     * spring
-    * hibernate
+    * [Hibernate 中的枚举持久化](rear-end/hibernate_enum_notes.md)
     * MyBatis 常见面试题总结
     * [QueryDSL 使用笔记](rear-end/querydsl_use_notes.md)
 
@@ -68,3 +68,4 @@
 
 * [WINDOWS下搭建开发环境](other/win_dev_conf.md)
 * [WINDOWS 常用命令](other/win_command_notes.md)
+* [Windows 的 linux 子系统使用笔记](other/wsl_use_notes.md)
