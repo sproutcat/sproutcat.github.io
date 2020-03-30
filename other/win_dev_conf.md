@@ -123,6 +123,7 @@
    * Maven Helper
    * Translation（翻译插件）
    * CodeGlance （代码地图）
+   * CamelCase
 
 2. 修改 `Terminal` 的默认命令行工具，使用 `git-bash`，操作如下：
 
