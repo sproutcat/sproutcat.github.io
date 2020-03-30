@@ -6,6 +6,7 @@
 <url> <loc>https://gitee.com/guozhen168/rear-end/java/java_multi_thread_base_notes.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://gitee.com/guozhen168/rear-end/java/java_multi_thread_notes.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://gitee.com/guozhen168/rear-end/java/java_aqs_notes.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gitee.com/guozhen168/rear-end/hibernate_enum_notes.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://gitee.com/guozhen168/rear-end/querydsl_use_notes.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://gitee.com/guozhen168/rear-end/flyway_use_notes.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://gitee.com/guozhen168/rear-end/antlr_use_notes.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
@@ -19,4 +20,5 @@
 <url> <loc>https://gitee.com/guozhen168/tools/fiddler_use_notes.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://gitee.com/guozhen168/other/win_dev_conf.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://gitee.com/guozhen168/other/win_command_notes.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gitee.com/guozhen168/other/wsl_use_notes.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 </urlset>
