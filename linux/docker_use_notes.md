@@ -24,6 +24,7 @@ docker tag <image> username/repository:tag			# 标记 <image> 以上传到镜像
 docker push username/repository:tag					# 将已标记的镜像上传到镜像库
 docker run username/repository:tag					# 运行镜像库中的镜像
 docker logs -f <hash>								# 查看指定容器的日志
+docker logs --tail=100 <hash>						# 查看指定容器的最后100行日志
 ```
 
 ## Docker 拉取 Redis 镜像，并运行
@@ -42,7 +43,7 @@ docker logs -f <hash>								# 查看指定容器的日志
 
 * 创建 redis 配置目录
 
-  ```
+  ```shell
   mkdir $PWD/redis/{conf,data} -p
   cd redis
   ```

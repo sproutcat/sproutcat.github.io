@@ -96,8 +96,36 @@ netstat -aon|findstr "443"
 	     taskkill /f /t /im 12672
 	     ```
 
-
-
 > 参考文章
 >
 > [Window 通过cmd查看端口占用、相应进程、杀死进程等的命令](http://blog.csdn.net/jiangwei0910410003/article/details/18967441)
+
+## 设置环境变量
+
+设置用户环境变量
+
+```powershell
+setx NAME "sam"
+```
+
+设置系统环境变量
+
+```powershell
+setx NAME "sam" /m
+```
+
+注意：
+
+（1）在某些情况下会出现“setx无效语法 默认选项不能超过‘2’次”的错误，是因为原先的环境变量中存在空格导致的，可使用双引号进行避免。
+
+（2）setx在设置变量的长度超过1024，会截取多出的字符。
+
+（3）setx设置环境变量后，将在新打开的终端中生效，当前终端不会立即生效。
+
+（4）setx在设置某一变量的值，如果已经存在该变量会覆盖之前的值。所以正确方式是：要保存值=获取当前该变量的值+新值。
+
+例如：set oldValue=获取当前变量值
+
+```powershell
+setx path %oldValue%;%newValue%
+```

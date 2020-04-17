@@ -248,3 +248,4 @@ public class PersonController {
 }
 ```
 
+> 注意：`Projections.bean` 是是通过调用 `Introspector.getBeanInfo` 获取到属性的 **set** 方法的，在使用 **lombok** 的 `@Accessors(chain = true)` 时，是获取不到属性的 set 方法的
